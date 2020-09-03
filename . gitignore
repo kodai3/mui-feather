@@ -1,0 +1,13 @@
+.idea
+.vscode
+.cache
+
+.DS_STORE
+*.log
+/.eslintcache
+/.nyc_output
+/coverage
+/test/regressions/screenshots
+/test/selenium-output
+build
+node_modules

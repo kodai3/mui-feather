@@ -1,0 +1,11 @@
+import * as React from "react";
+import { createSvgIcon } from "@material-ui/core/utils";
+
+export default createSvgIcon(
+  <>
+    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+    <rect x="7" y="7" width="3" height="9" />
+    <rect x="14" y="7" width="3" height="5" />
+  </>,
+  "Trello"
+);

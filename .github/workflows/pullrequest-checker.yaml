@@ -1,0 +1,35 @@
+name: Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  check:
+    name: check code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      # yarnのキャッシュ
+      - uses: actions/cache@v1
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-frontend-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-frontend
+
+      - name: install
+        run: yarn --frozen-lockfile
+
+      - name: prettier
+        run: yarn prettier check-changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: lint
+        run: yarn eslint:ci
+
+      - name: build
+        run: yarn run build
