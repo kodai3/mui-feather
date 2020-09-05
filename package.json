@@ -23,6 +23,10 @@
     "type": "git",
     "url": "https://github.com/kodai3/mui-feather.git"
   },
+  "homepage": "https://github.com/kodai3/mui-feather#readme",
+  "bugs": {
+    "url": "https://github.com/kodai3/mui-feather/issues"
+  },
   "scripts": {
     "prebuild": "rimraf build",
     "build": "yarn build:cjs && yarn build:esm && yarn build:copy-files",
