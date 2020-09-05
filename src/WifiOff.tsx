@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -11,5 +11,5 @@ export default createSvgIcon(
     <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
     <line x1="12" y1="20" x2="12.01" y2="20" />
   </>,
-  "WifiOff"
+  'WifiOff',
 );

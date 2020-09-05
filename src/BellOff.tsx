@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -9,5 +9,5 @@ export default createSvgIcon(
     <path d="M18 8a6 6 0 0 0-9.33-5" />
     <line x1="1" y1="1" x2="23" y2="23" />
   </>,
-  "BellOff"
+  'BellOff',
 );

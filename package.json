@@ -31,7 +31,8 @@
     "release": "yarn build && npm publish build",
     "lint": "eslint src/**/* --cache --report-unused-disable-directives --ext .tsx",
     "lint:ci": "eslint src/**/* --report-unused-disable-directives --ext .tsx",
-    "prettier": "node ./scripts/prettier.js"
+    "prettier": "node ./scripts/prettier.js",
+    "prettier:all": "node ./scripts/prettier.js write"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.11.0",

@@ -1,7 +1,4 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
-export default createSvgIcon(
-  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />,
-  "Square"
-);
+export default createSvgIcon(<rect x="3" y="3" width="18" height="18" rx="2" ry="2" />, 'Square');

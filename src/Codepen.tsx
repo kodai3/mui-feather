@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -9,5 +9,5 @@ export default createSvgIcon(
     <polyline points="2 15.5 12 8.5 22 15.5" />
     <line x1="12" y1="2" x2="12" y2="8.5" />
   </>,
-  "Codepen"
+  'Codepen',
 );

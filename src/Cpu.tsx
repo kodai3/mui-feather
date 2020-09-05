@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -14,5 +14,5 @@ export default createSvgIcon(
     <line x1="1" y1="9" x2="4" y2="9" />
     <line x1="1" y1="14" x2="4" y2="14" />
   </>,
-  "Cpu"
+  'Cpu',
 );

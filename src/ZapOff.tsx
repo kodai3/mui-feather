@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -8,5 +8,5 @@ export default createSvgIcon(
     <polyline points="8 8 3 14 12 14 11 22 16 16" />
     <line x1="1" y1="1" x2="23" y2="23" />
   </>,
-  "ZapOff"
+  'ZapOff',
 );

@@ -19,7 +19,8 @@ module.exports = {
         modules: ['esm', 'production-umd'].includes(process.env.BABEL_ENV) ? false : 'commonjs',
       },
     ],
-    '@babel/preset-react', '@babel/preset-typescript'
+    '@babel/preset-react',
+    '@babel/preset-typescript',
   ],
   plugins: [
     'babel-plugin-optimize-clsx',
@@ -38,5 +39,5 @@ module.exports = {
     esm: {
       plugins: [...productionPlugins, ['@babel/plugin-transform-runtime', { useESModules: true }]],
     },
-   },
+  },
 };

@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -8,5 +8,5 @@ export default createSvgIcon(
     <path d="M13 6h3a2 2 0 0 1 2 2v7" />
     <line x1="6" y1="9" x2="6" y2="21" />
   </>,
-  "GitPullRequest"
+  'GitPullRequest',
 );

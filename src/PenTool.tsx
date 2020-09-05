@@ -1,5 +1,5 @@
-import * as React from "react";
-import { createSvgIcon } from "@material-ui/core/utils";
+import * as React from 'react';
+import { createSvgIcon } from '@material-ui/core/utils';
 
 export default createSvgIcon(
   <>
@@ -8,5 +8,5 @@ export default createSvgIcon(
     <path d="M2 2l7.586 7.586" />
     <circle cx="11" cy="11" r="2" />
   </>,
-  "PenTool"
+  'PenTool',
 );

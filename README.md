@@ -1,7 +1,9 @@
 # mui-feather
+
 This package provides the [Feather icons](https://feathericons.com/) packaged as a set of React components.
 
 ## Installation
+
 Install the package in your project directory with:
 
 // with npm
