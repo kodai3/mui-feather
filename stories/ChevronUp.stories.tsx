@@ -1,16 +1,15 @@
-import React from 'react';
-  import { Story, Meta } from '@storybook/react/types-6-0';
-  import Icon from '../src/ChevronUp';
+import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Icon from '../src/ChevronUp';
 
-  export default {
-    title: 'Icons/ChevronUp',
-    component: Icon,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
-  } as Meta;
+export default {
+  title: 'Icons/ChevronUp',
+  component: Icon,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as Meta;
 
-  const Template: Story = () => <Icon />;
+const Template: Story = () => <Icon />;
 
-  export const ChevronUp = Template.bind({});
-  
+export const ChevronUp = Template.bind({});

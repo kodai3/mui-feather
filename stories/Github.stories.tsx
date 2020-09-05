@@ -1,16 +1,15 @@
-import React from 'react';
-  import { Story, Meta } from '@storybook/react/types-6-0';
-  import Icon from '../src/Github';
+import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Icon from '../src/Github';
 
-  export default {
-    title: 'Icons/Github',
-    component: Icon,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
-  } as Meta;
+export default {
+  title: 'Icons/Github',
+  component: Icon,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as Meta;
 
-  const Template: Story = () => <Icon />;
+const Template: Story = () => <Icon />;
 
-  export const Github = Template.bind({});
-  
+export const Github = Template.bind({});

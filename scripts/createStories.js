@@ -13,22 +13,22 @@ function normalizeFileName(file) {
 
 function createIconStory(file) {
   const name = normalizeFileName(file);
-  const contents = `import React from 'react';
-  import { Story, Meta } from '@storybook/react/types-6-0';
-  import Icon from '../src/${name}';
+  const contents = `import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Icon from '../src/${name}';
 
-  export default {
-    title: 'Icons/${name}',
-    component: Icon,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
-  } as Meta;
+export default {
+  title: 'Icons/${name}',
+  component: Icon,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as Meta;
 
-  const Template: Story = () => <Icon />;
+const Template: Story = () => <Icon />;
 
-  export const ${name} = Template.bind({});
-  `;
+export const ${name} = Template.bind({});
+`;
   return fse.writeFile(path.resolve(TARGET_DIR, `${name}.stories.tsx`), contents, 'utf8');
 }
 

@@ -1,16 +1,15 @@
-import React from 'react';
-  import { Story, Meta } from '@storybook/react/types-6-0';
-  import Icon from '../src/BellOff';
+import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Icon from '../src/BellOff';
 
-  export default {
-    title: 'Icons/BellOff',
-    component: Icon,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
-  } as Meta;
+export default {
+  title: 'Icons/BellOff',
+  component: Icon,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as Meta;
 
-  const Template: Story = () => <Icon />;
+const Template: Story = () => <Icon />;
 
-  export const BellOff = Template.bind({});
-  
+export const BellOff = Template.bind({});

@@ -1,16 +1,15 @@
-import React from 'react';
-  import { Story, Meta } from '@storybook/react/types-6-0';
-  import Icon from '../src/Cpu';
+import * as React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+import Icon from '../src/Cpu';
 
-  export default {
-    title: 'Icons/Cpu',
-    component: Icon,
-    argTypes: {
-      backgroundColor: { control: 'color' },
-    },
-  } as Meta;
+export default {
+  title: 'Icons/Cpu',
+  component: Icon,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as Meta;
 
-  const Template: Story = () => <Icon />;
+const Template: Story = () => <Icon />;
 
-  export const Cpu = Template.bind({});
-  
+export const Cpu = Template.bind({});
