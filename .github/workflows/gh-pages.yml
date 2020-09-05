@@ -1,0 +1,32 @@
+name: Deploy storybook to github pages
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-icon-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-icon
+
+      - name: Install
+        run: yarn --frozen-lockfile
+
+      - name: Deploy storybook
+        run: yarn deploy-storybook -- --ci
+        env:
+          GH_TOKEN: gaudiy:${{ secrets.GITHUB_TOKEN }}
