@@ -25,6 +25,7 @@
   "plugins": ["eslint-plugin-material-ui", "eslint-plugin-react-hooks", "@typescript-eslint/eslint-plugin"],
   "rules": {
     "import/no-extraneous-dependencies": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
   }
 }
