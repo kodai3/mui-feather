@@ -20,16 +20,22 @@ jobs:
           key: ${{ runner.os }}-frontend-${{ hashFiles('**/yarn.lock') }}
           restore-keys: ${{ runner.os }}-frontend
 
-      - name: install
+      - name: Install
         run: yarn --frozen-lockfile
 
-      - name: prettier
+      - name: Prettier
         run: yarn prettier check-changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: lint
+      - name: Lint
         run: yarn eslint:ci
 
-      - name: build
+      - name: Generate story
+        run: yarn create-stories
+
+      - name: '`yarn create-stories` changes committed?'
+        run: git diff --exit-code
+
+      - name: Build
         run: yarn run build
