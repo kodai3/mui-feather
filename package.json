@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mui-org/material-ui.git"
+    "url": "https://github.com/kodai3/mui-feather.git"
   },
   "scripts": {
     "prebuild": "rimraf build",
