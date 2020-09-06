@@ -1,6 +1,6 @@
 {
   "name": "mui-feather",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "module": "esm/index.js",
   "typings": "index.d.ts",
