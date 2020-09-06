@@ -22,7 +22,6 @@ async function execGitCmd(args) {
 }
 
 /**
- * developと比べて、。変更のあったファイルを返却する
  *
  * @returns string[] diff files
  */
