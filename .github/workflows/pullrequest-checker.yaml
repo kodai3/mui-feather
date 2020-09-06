@@ -37,5 +37,8 @@ jobs:
       - name: '`yarn create-stories` changes committed?'
         run: git diff --exit-code
 
+      - name: Snapshot Test
+        run: yarn test:snapshot
+
       - name: Build
-        run: yarn run build
+        run: yarn build

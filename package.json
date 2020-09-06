@@ -41,7 +41,9 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "create-stories": "node ./scripts/createStories.js",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "test:snapshot": "jest storybook.test.js",
+    "test:snapshot:update": "yarn run test:snapshot --u"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.11.0",
@@ -66,6 +68,7 @@
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
+    "@storybook/addon-storyshots": "^6.0.21",
     "@storybook/react": "^6.0.21",
     "@storybook/storybook-deployer": "^2.8.6",
     "@types/node": "^14.6.4",
@@ -88,8 +91,10 @@
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.7",
     "glob-gitignore": "^1.0.14",
+    "jest": "^26.4.2",
     "prettier": "^2.0.1",
     "react-is": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.0.2",
     "yargs": "^15.4.1"
