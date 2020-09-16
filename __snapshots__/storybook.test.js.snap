@@ -2186,7 +2186,7 @@ exports[`Storyshots Icons/DownloadCloud Download Cloud 1`] = `
 </svg>
 `;
 
-exports[`Storyshots Icons/Dribble Dribble 1`] = `
+exports[`Storyshots Icons/Dribbble Dribbble 1`] = `
 <svg
   aria-hidden={true}
   className="MuiSvgIcon-root makeStyles-root-94"

@@ -91,7 +91,7 @@ export { default as Divide } from './Divide';
 export { default as DollarSign } from './DollarSign';
 export { default as DownloadCloud } from './DownloadCloud';
 export { default as Download } from './Download';
-export { default as Dribbble } from './Dribble';
+export { default as Dribbble } from './Dribbble';
 export { default as Droplet } from './Droplet';
 export { default as Edit2 } from './Edit2';
 export { default as Edit3 } from './Edit3';
