@@ -133,7 +133,7 @@ export { default as Hexagon } from './Hexagon';
 export { default as Home } from './Home';
 export { default as Image } from './Image';
 export { default as Inbox } from './Inbox';
-export { default as Info } from './Inbox';
+export { default as Info } from './Info';
 export { default as Instagram } from './Instagram';
 export { default as Italic } from './Italic';
 export { default as Key } from './Key';
