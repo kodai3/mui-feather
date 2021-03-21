@@ -24,7 +24,7 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Prettier
-        run: yarn prettier check-changed
+        run: yarn format check-changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,9 +32,9 @@ jobs:
         run: yarn lint:ci
 
       - name: Generate story
-        run: yarn create-stories
+        run: yarn build:manifest
 
-      - name: '`yarn create-stories` changes committed?'
+      - name: '`yarn build:manifest` changes committed?'
         run: git diff --exit-code
 
       - name: Snapshot Test
