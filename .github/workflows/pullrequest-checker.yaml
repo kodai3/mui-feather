@@ -24,7 +24,7 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Prettier
-        run: yarn prettier check-changed
+        run: yarn format check-changed
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
